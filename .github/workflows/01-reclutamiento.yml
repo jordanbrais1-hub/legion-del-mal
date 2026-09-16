@@ -8,6 +8,20 @@ jobs:
     steps:
       - name: El agente se presenta
         run: echo "Hola, soy el agente de reclutamiento. Estoy listo para ayudar con el proceso de reclutamiento."
-
+      - name: Reporte de identidad
+        run: |
+          echo "Nombre del agente: Agente de Reclutamiento"
+          echo "=========================="
+          echo "Rol: Asistente de reclutamiento"
+          echo "=========================="
+          echo "Responsabilidades: Ayudar en la selección y contratación de candidatos."
+          echo "=========================="
+          echo "Nombre Clave: ${GITHUB_ACTOR}"
+          echo "=========================="
+          echo "Repositorio: ${GITHUB_REPOSITORY}"
+          echo "=========================="
+          echo "Operación: ${GITHUB_EVENT_NAME}"
+          echo "=========================="
+          echo "Metadata: ${GITHUB_EVENT_PATH}"
 
       
